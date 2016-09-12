@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F7B835E51D87341F0090B951 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B835E41D87341F0090B951 /* AppDelegate.swift */; };
+		F7B835E71D87341F0090B951 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B835E61D87341F0090B951 /* ViewController.swift */; };
+		F7B835EA1D87341F0090B951 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7B835E81D87341F0090B951 /* Main.storyboard */; };
+		F7B835ED1D87341F0090B951 /* SimpleHealth.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F7B835EB1D87341F0090B951 /* SimpleHealth.xcdatamodeld */; };
+		F7B835EF1D87341F0090B951 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7B835EE1D87341F0090B951 /* Assets.xcassets */; };
+		F7B835F21D87341F0090B951 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7B835F01D87341F0090B951 /* LaunchScreen.storyboard */; };
+		F7B835FD1D87341F0090B951 /* SimpleHealthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B835FC1D87341F0090B951 /* SimpleHealthTests.swift */; };
+		F7B836081D87341F0090B951 /* SimpleHealthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B836071D87341F0090B951 /* SimpleHealthUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F7B835F91D87341F0090B951 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F7B835D91D87341D0090B951 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7B835E01D87341D0090B951;
+			remoteInfo = SimpleHealth;
+		};
+		F7B836041D87341F0090B951 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F7B835D91D87341D0090B951 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7B835E01D87341D0090B951;
+			remoteInfo = SimpleHealth;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F7B835E11D87341E0090B951 /* SimpleHealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleHealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7B835E41D87341F0090B951 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F7B835E61D87341F0090B951 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F7B835E91D87341F0090B951 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F7B835EC1D87341F0090B951 /* SimpleHealth.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SimpleHealth.xcdatamodel; sourceTree = "<group>"; };
+		F7B835EE1D87341F0090B951 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F7B835F11D87341F0090B951 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F7B835F31D87341F0090B951 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7B835F81D87341F0090B951 /* SimpleHealthTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleHealthTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7B835FC1D87341F0090B951 /* SimpleHealthTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleHealthTests.swift; sourceTree = "<group>"; };
+		F7B835FE1D87341F0090B951 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7B836031D87341F0090B951 /* SimpleHealthUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleHealthUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7B836071D87341F0090B951 /* SimpleHealthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleHealthUITests.swift; sourceTree = "<group>"; };
+		F7B836091D87341F0090B951 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F7B835DE1D87341D0090B951 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7B835F51D87341F0090B951 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7B836001D87341F0090B951 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F7B835D81D87341D0090B951 = {
+			isa = PBXGroup;
+			children = (
+				F7B835E31D87341F0090B951 /* SimpleHealth */,
+				F7B835FB1D87341F0090B951 /* SimpleHealthTests */,
+				F7B836061D87341F0090B951 /* SimpleHealthUITests */,
+				F7B835E21D87341E0090B951 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F7B835E21D87341E0090B951 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F7B835E11D87341E0090B951 /* SimpleHealth.app */,
+				F7B835F81D87341F0090B951 /* SimpleHealthTests.xctest */,
+				F7B836031D87341F0090B951 /* SimpleHealthUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F7B835E31D87341F0090B951 /* SimpleHealth */ = {
+			isa = PBXGroup;
+			children = (
+				F7B835E41D87341F0090B951 /* AppDelegate.swift */,
+				F7B835E61D87341F0090B951 /* ViewController.swift */,
+				F7B835E81D87341F0090B951 /* Main.storyboard */,
+				F7B835EE1D87341F0090B951 /* Assets.xcassets */,
+				F7B835F01D87341F0090B951 /* LaunchScreen.storyboard */,
+				F7B835F31D87341F0090B951 /* Info.plist */,
+				F7B835EB1D87341F0090B951 /* SimpleHealth.xcdatamodeld */,
+			);
+			path = SimpleHealth;
+			sourceTree = "<group>";
+		};
+		F7B835FB1D87341F0090B951 /* SimpleHealthTests */ = {
+			isa = PBXGroup;
+			children = (
+				F7B835FC1D87341F0090B951 /* SimpleHealthTests.swift */,
+				F7B835FE1D87341F0090B951 /* Info.plist */,
+			);
+			path = SimpleHealthTests;
+			sourceTree = "<group>";
+		};
+		F7B836061D87341F0090B951 /* SimpleHealthUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F7B836071D87341F0090B951 /* SimpleHealthUITests.swift */,
+				F7B836091D87341F0090B951 /* Info.plist */,
+			);
+			path = SimpleHealthUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F7B835E01D87341D0090B951 /* SimpleHealth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7B8360C1D87341F0090B951 /* Build configuration list for PBXNativeTarget "SimpleHealth" */;
+			buildPhases = (
+				F7B835DD1D87341D0090B951 /* Sources */,
+				F7B835DE1D87341D0090B951 /* Frameworks */,
+				F7B835DF1D87341D0090B951 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleHealth;
+			productName = SimpleHealth;
+			productReference = F7B835E11D87341E0090B951 /* SimpleHealth.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F7B835F71D87341F0090B951 /* SimpleHealthTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7B8360F1D87341F0090B951 /* Build configuration list for PBXNativeTarget "SimpleHealthTests" */;
+			buildPhases = (
+				F7B835F41D87341F0090B951 /* Sources */,
+				F7B835F51D87341F0090B951 /* Frameworks */,
+				F7B835F61D87341F0090B951 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F7B835FA1D87341F0090B951 /* PBXTargetDependency */,
+			);
+			name = SimpleHealthTests;
+			productName = SimpleHealthTests;
+			productReference = F7B835F81D87341F0090B951 /* SimpleHealthTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F7B836021D87341F0090B951 /* SimpleHealthUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7B836121D87341F0090B951 /* Build configuration list for PBXNativeTarget "SimpleHealthUITests" */;
+			buildPhases = (
+				F7B835FF1D87341F0090B951 /* Sources */,
+				F7B836001D87341F0090B951 /* Frameworks */,
+				F7B836011D87341F0090B951 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F7B836051D87341F0090B951 /* PBXTargetDependency */,
+			);
+			name = SimpleHealthUITests;
+			productName = SimpleHealthUITests;
+			productReference = F7B836031D87341F0090B951 /* SimpleHealthUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F7B835D91D87341D0090B951 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = FelixHedlund;
+				TargetAttributes = {
+					F7B835E01D87341D0090B951 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					F7B835F71D87341F0090B951 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = F7B835E01D87341D0090B951;
+					};
+					F7B836021D87341F0090B951 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = F7B835E01D87341D0090B951;
+					};
+				};
+			};
+			buildConfigurationList = F7B835DC1D87341D0090B951 /* Build configuration list for PBXProject "SimpleHealth" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F7B835D81D87341D0090B951;
+			productRefGroup = F7B835E21D87341E0090B951 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F7B835E01D87341D0090B951 /* SimpleHealth */,
+				F7B835F71D87341F0090B951 /* SimpleHealthTests */,
+				F7B836021D87341F0090B951 /* SimpleHealthUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F7B835DF1D87341D0090B951 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7B835F21D87341F0090B951 /* LaunchScreen.storyboard in Resources */,
+				F7B835EF1D87341F0090B951 /* Assets.xcassets in Resources */,
+				F7B835EA1D87341F0090B951 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7B835F61D87341F0090B951 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7B836011D87341F0090B951 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F7B835DD1D87341D0090B951 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7B835ED1D87341F0090B951 /* SimpleHealth.xcdatamodeld in Sources */,
+				F7B835E71D87341F0090B951 /* ViewController.swift in Sources */,
+				F7B835E51D87341F0090B951 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7B835F41D87341F0090B951 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7B835FD1D87341F0090B951 /* SimpleHealthTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7B835FF1D87341F0090B951 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7B836081D87341F0090B951 /* SimpleHealthUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F7B835FA1D87341F0090B951 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F7B835E01D87341D0090B951 /* SimpleHealth */;
+			targetProxy = F7B835F91D87341F0090B951 /* PBXContainerItemProxy */;
+		};
+		F7B836051D87341F0090B951 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F7B835E01D87341D0090B951 /* SimpleHealth */;
+			targetProxy = F7B836041D87341F0090B951 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F7B835E81D87341F0090B951 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7B835E91D87341F0090B951 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F7B835F01D87341F0090B951 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7B835F11D87341F0090B951 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F7B8360A1D87341F0090B951 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F7B8360B1D87341F0090B951 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F7B8360D1D87341F0090B951 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SimpleHealth/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = felixhedlund.SimpleHealth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F7B8360E1D87341F0090B951 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SimpleHealth/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = felixhedlund.SimpleHealth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F7B836101D87341F0090B951 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SimpleHealthTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = felixhedlund.SimpleHealthTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleHealth.app/SimpleHealth";
+			};
+			name = Debug;
+		};
+		F7B836111D87341F0090B951 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SimpleHealthTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = felixhedlund.SimpleHealthTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleHealth.app/SimpleHealth";
+			};
+			name = Release;
+		};
+		F7B836131D87341F0090B951 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SimpleHealthUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = felixhedlund.SimpleHealthUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SimpleHealth;
+			};
+			name = Debug;
+		};
+		F7B836141D87341F0090B951 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SimpleHealthUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = felixhedlund.SimpleHealthUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SimpleHealth;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F7B835DC1D87341D0090B951 /* Build configuration list for PBXProject "SimpleHealth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7B8360A1D87341F0090B951 /* Debug */,
+				F7B8360B1D87341F0090B951 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7B8360C1D87341F0090B951 /* Build configuration list for PBXNativeTarget "SimpleHealth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7B8360D1D87341F0090B951 /* Debug */,
+				F7B8360E1D87341F0090B951 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F7B8360F1D87341F0090B951 /* Build configuration list for PBXNativeTarget "SimpleHealthTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7B836101D87341F0090B951 /* Debug */,
+				F7B836111D87341F0090B951 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F7B836121D87341F0090B951 /* Build configuration list for PBXNativeTarget "SimpleHealthUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7B836131D87341F0090B951 /* Debug */,
+				F7B836141D87341F0090B951 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F7B835EB1D87341F0090B951 /* SimpleHealth.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F7B835EC1D87341F0090B951 /* SimpleHealth.xcdatamodel */,
+			);
+			currentVersion = F7B835EC1D87341F0090B951 /* SimpleHealth.xcdatamodel */;
+			path = SimpleHealth.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F7B835D91D87341D0090B951 /* Project object */;
+}
