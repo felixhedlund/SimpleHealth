@@ -1,0 +1,10 @@
+PODS:
+  - IBAnimatable (2.7)
+
+DEPENDENCIES:
+  - IBAnimatable
+
+SPEC CHECKSUMS:
+  IBAnimatable: baa9b37d0326de969836e9215f73cc377a5a84a6
+
+COCOAPODS: 0.39.0

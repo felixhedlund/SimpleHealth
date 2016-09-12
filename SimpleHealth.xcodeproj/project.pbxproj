@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C2604A7F9B04202ED9689989 /* Pods_SimpleHealth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4F7945C6B199663DC17138D /* Pods_SimpleHealth.framework */; };
 		F7B835E51D87341F0090B951 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B835E41D87341F0090B951 /* AppDelegate.swift */; };
-		F7B835E71D87341F0090B951 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B835E61D87341F0090B951 /* ViewController.swift */; };
 		F7B835EA1D87341F0090B951 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7B835E81D87341F0090B951 /* Main.storyboard */; };
 		F7B835ED1D87341F0090B951 /* SimpleHealth.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F7B835EB1D87341F0090B951 /* SimpleHealth.xcdatamodeld */; };
 		F7B835EF1D87341F0090B951 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7B835EE1D87341F0090B951 /* Assets.xcassets */; };
 		F7B835F21D87341F0090B951 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7B835F01D87341F0090B951 /* LaunchScreen.storyboard */; };
 		F7B835FD1D87341F0090B951 /* SimpleHealthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B835FC1D87341F0090B951 /* SimpleHealthTests.swift */; };
 		F7B836081D87341F0090B951 /* SimpleHealthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B836071D87341F0090B951 /* SimpleHealthUITests.swift */; };
+		F7B836181D8743800090B951 /* BackgroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B836171D8743800090B951 /* BackgroundViewController.swift */; };
+		F7B8361A1D8744720090B951 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B836191D8744720090B951 /* InitialViewController.swift */; };
+		F7B8361C1D8753100090B951 /* Contents.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7B8361B1D8753100090B951 /* Contents.storyboard */; };
+		F7B836221D87539D0090B951 /* HelloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B836211D87539D0090B951 /* HelloViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		115E70EB09213B1B7C8B2174 /* Pods-SimpleHealth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleHealth.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleHealth/Pods-SimpleHealth.release.xcconfig"; sourceTree = "<group>"; };
+		A00D040F61F44C76A14BD1E7 /* Pods-SimpleHealth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleHealth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleHealth/Pods-SimpleHealth.debug.xcconfig"; sourceTree = "<group>"; };
+		D4F7945C6B199663DC17138D /* Pods_SimpleHealth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleHealth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7B835E11D87341E0090B951 /* SimpleHealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleHealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7B835E41D87341F0090B951 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F7B835E61D87341F0090B951 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F7B835E91D87341F0090B951 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F7B835EC1D87341F0090B951 /* SimpleHealth.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SimpleHealth.xcdatamodel; sourceTree = "<group>"; };
 		F7B835EE1D87341F0090B951 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +55,10 @@
 		F7B836031D87341F0090B951 /* SimpleHealthUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleHealthUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7B836071D87341F0090B951 /* SimpleHealthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleHealthUITests.swift; sourceTree = "<group>"; };
 		F7B836091D87341F0090B951 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7B836171D8743800090B951 /* BackgroundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundViewController.swift; sourceTree = "<group>"; };
+		F7B836191D8744720090B951 /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		F7B8361B1D8753100090B951 /* Contents.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Contents.storyboard; sourceTree = "<group>"; };
+		F7B836211D87539D0090B951 /* HelloViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelloViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2604A7F9B04202ED9689989 /* Pods_SimpleHealth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +87,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F7B963565B7029D4E8C804F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4F7945C6B199663DC17138D /* Pods_SimpleHealth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5E46944C1097A29A1EC0C425 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A00D040F61F44C76A14BD1E7 /* Pods-SimpleHealth.debug.xcconfig */,
+				115E70EB09213B1B7C8B2174 /* Pods-SimpleHealth.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F7B835D81D87341D0090B951 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +111,8 @@
 				F7B835FB1D87341F0090B951 /* SimpleHealthTests */,
 				F7B836061D87341F0090B951 /* SimpleHealthUITests */,
 				F7B835E21D87341E0090B951 /* Products */,
+				5E46944C1097A29A1EC0C425 /* Pods */,
+				2F7B963565B7029D4E8C804F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +129,12 @@
 		F7B835E31D87341F0090B951 /* SimpleHealth */ = {
 			isa = PBXGroup;
 			children = (
-				F7B835E41D87341F0090B951 /* AppDelegate.swift */,
-				F7B835E61D87341F0090B951 /* ViewController.swift */,
-				F7B835E81D87341F0090B951 /* Main.storyboard */,
 				F7B835EE1D87341F0090B951 /* Assets.xcassets */,
-				F7B835F01D87341F0090B951 /* LaunchScreen.storyboard */,
 				F7B835F31D87341F0090B951 /* Info.plist */,
 				F7B835EB1D87341F0090B951 /* SimpleHealth.xcdatamodeld */,
+				F7B835E41D87341F0090B951 /* AppDelegate.swift */,
+				F7B8361D1D87535B0090B951 /* View */,
+				F7B8361E1D8753630090B951 /* Controller */,
 			);
 			path = SimpleHealth;
 			sourceTree = "<group>";
@@ -128,6 +157,42 @@
 			path = SimpleHealthUITests;
 			sourceTree = "<group>";
 		};
+		F7B8361D1D87535B0090B951 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F7B835E81D87341F0090B951 /* Main.storyboard */,
+				F7B8361B1D8753100090B951 /* Contents.storyboard */,
+				F7B835F01D87341F0090B951 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F7B8361E1D8753630090B951 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F7B836201D87538B0090B951 /* Initial */,
+				F7B8361F1D8753770090B951 /* Contents */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		F7B8361F1D8753770090B951 /* Contents */ = {
+			isa = PBXGroup;
+			children = (
+				F7B836211D87539D0090B951 /* HelloViewController.swift */,
+			);
+			name = Contents;
+			sourceTree = "<group>";
+		};
+		F7B836201D87538B0090B951 /* Initial */ = {
+			isa = PBXGroup;
+			children = (
+				F7B836171D8743800090B951 /* BackgroundViewController.swift */,
+				F7B836191D8744720090B951 /* InitialViewController.swift */,
+			);
+			name = Initial;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +200,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F7B8360C1D87341F0090B951 /* Build configuration list for PBXNativeTarget "SimpleHealth" */;
 			buildPhases = (
+				9B3446545530CD8CAE83D2B5 /* Check Pods Manifest.lock */,
 				F7B835DD1D87341D0090B951 /* Sources */,
 				F7B835DE1D87341D0090B951 /* Frameworks */,
 				F7B835DF1D87341D0090B951 /* Resources */,
+				E2306760FD16AB957853F1D8 /* Embed Pods Frameworks */,
+				D7AAA13F26B1AD71B1FA667E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -196,6 +264,7 @@
 				TargetAttributes = {
 					F7B835E01D87341D0090B951 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = NRNUQBB7ZW;
 					};
 					F7B835F71D87341F0090B951 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -232,6 +301,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7B8361C1D8753100090B951 /* Contents.storyboard in Resources */,
 				F7B835F21D87341F0090B951 /* LaunchScreen.storyboard in Resources */,
 				F7B835EF1D87341F0090B951 /* Assets.xcassets in Resources */,
 				F7B835EA1D87341F0090B951 /* Main.storyboard in Resources */,
@@ -254,14 +324,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9B3446545530CD8CAE83D2B5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D7AAA13F26B1AD71B1FA667E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleHealth/Pods-SimpleHealth-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2306760FD16AB957853F1D8 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleHealth/Pods-SimpleHealth-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F7B835DD1D87341D0090B951 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7B836181D8743800090B951 /* BackgroundViewController.swift in Sources */,
+				F7B836221D87539D0090B951 /* HelloViewController.swift in Sources */,
 				F7B835ED1D87341F0090B951 /* SimpleHealth.xcdatamodeld in Sources */,
-				F7B835E71D87341F0090B951 /* ViewController.swift in Sources */,
 				F7B835E51D87341F0090B951 /* AppDelegate.swift in Sources */,
+				F7B8361A1D8744720090B951 /* InitialViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,23 +523,31 @@
 		};
 		F7B8360D1D87341F0090B951 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A00D040F61F44C76A14BD1E7 /* Pods-SimpleHealth.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SimpleHealth/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = felixhedlund.SimpleHealth;
+				PRODUCT_BUNDLE_IDENTIFIER = gingerapps.SimpleHealth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		F7B8360E1D87341F0090B951 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 115E70EB09213B1B7C8B2174 /* Pods-SimpleHealth.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SimpleHealth/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = felixhedlund.SimpleHealth;
+				PRODUCT_BUNDLE_IDENTIFIER = gingerapps.SimpleHealth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -488,6 +616,7 @@
 				F7B8360E1D87341F0090B951 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F7B8360F1D87341F0090B951 /* Build configuration list for PBXNativeTarget "SimpleHealthTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +625,7 @@
 				F7B836111D87341F0090B951 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F7B836121D87341F0090B951 /* Build configuration list for PBXNativeTarget "SimpleHealthUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +634,7 @@
 				F7B836141D87341F0090B951 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -1,0 +1,6 @@
+framework module Pods_SimpleHealth {
+  umbrella header "Pods-SimpleHealth-umbrella.h"
+
+  export *
+  module * { export * }
+}
