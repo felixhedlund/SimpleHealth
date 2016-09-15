@@ -9,7 +9,7 @@
 import UIKit
 
 extension UIColor{
-    static func HexToColor(hexString: String, alpha:CGFloat? = 1.0) -> UIColor {
+    static func HexToColor(_ hexString: String, alpha:CGFloat? = 1.0) -> UIColor {
         let hexint = Int(self.intFromHexString(hexString))
         let red = CGFloat((hexint & 0xff0000) >> 16) / 255.0
         let green = CGFloat((hexint & 0xff00) >> 8) / 255.0
@@ -19,11 +19,11 @@ extension UIColor{
         return color
     }
     
-    static private func intFromHexString(hexStr: String) -> UInt32 {
+    static fileprivate func intFromHexString(_ hexStr: String) -> UInt32 {
         var hexInt: UInt32 = 0
-        let scanner: NSScanner = NSScanner(string: hexStr)
-        scanner.charactersToBeSkipped = NSCharacterSet(charactersInString: "#")
-        scanner.scanHexInt(&hexInt)
+        let scanner: Scanner = Scanner(string: hexStr)
+        scanner.charactersToBeSkipped = CharacterSet(charactersIn: "#")
+        scanner.scanHexInt32(&hexInt)
         return hexInt
     }
 }

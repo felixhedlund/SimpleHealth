@@ -10,7 +10,7 @@ import UIKit
 import IBAnimatable
 
 protocol BackgroundViewColorChangeDelegate{
-    func animateWithColor(color: UIColor)
+    func animateWithColor(_ color: UIColor)
 }
 
 class BackgroundViewController: UIViewController, BackgroundViewColorChangeDelegate {
@@ -18,7 +18,7 @@ class BackgroundViewController: UIViewController, BackgroundViewColorChangeDeleg
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        (UIApplication.sharedApplication().delegate as! AppDelegate).backgroundDelegate = self
+        (UIApplication.shared.delegate as! AppDelegate).backgroundDelegate = self
         // Do any additional setup after loading the view.
     }
 
@@ -27,8 +27,8 @@ class BackgroundViewController: UIViewController, BackgroundViewColorChangeDeleg
         // Dispose of any resources that can be recreated.
     }
     
-    func animateWithColor(color: UIColor){
-        UIView.animateWithDuration(1.0, delay: 0.0, options:[UIViewAnimationOptions.CurveEaseIn], animations: {
+    func animateWithColor(_ color: UIColor){
+        UIView.animate(withDuration: 1.0, delay: 0.0, options:[UIViewAnimationOptions.curveEaseIn], animations: {
             for triangle in self.triangles{
                 triangle.fillColor = color
             }

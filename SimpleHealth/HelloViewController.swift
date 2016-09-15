@@ -16,8 +16,8 @@ class HelloViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    override func viewDidAppear(animated: Bool) {
-        let vc =  UIStoryboard(name: "Contents", bundle: nil).instantiateViewControllerWithIdentifier("Menu")
+    override func viewDidAppear(_ animated: Bool) {
+        let vc =  UIStoryboard(name: "Contents", bundle: nil).instantiateViewController(withIdentifier: "Menu")
         self.navigationController?.pushViewController(vc, animated: true)
     }
 

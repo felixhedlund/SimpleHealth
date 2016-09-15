@@ -4,7 +4,7 @@ platform :ios, '9.3'
 use_frameworks!
 
 target 'SimpleHealth' do
-    pod 'IBAnimatable'
+    pod 'IBAnimatable', :git => 'https://github.com/IBAnimatable/IBAnimatable.git', :branch => 'swift3'
 end
 
 target 'SimpleHealthTests' do

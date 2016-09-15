@@ -20,7 +20,7 @@ class MenuViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    @IBAction func didPressRunningButton(sender: AnyObject) {
+    @IBAction func didPressRunningButton(_ sender: AnyObject) {
         removeDelays()
         let rect = runningImage.frame
         runningImage.y = -rect.minY + 24
@@ -35,7 +35,7 @@ class MenuViewController: UIViewController {
         }
         
     }
-    @IBAction func didPressFoodButton(sender: AnyObject) {
+    @IBAction func didPressFoodButton(_ sender: AnyObject) {
         removeDelays()
         let rect = foodImage.frame
         foodImage.y = -rect.minY + 24
@@ -50,7 +50,7 @@ class MenuViewController: UIViewController {
         }
     }
     
-    private func removeDelays(){
+    fileprivate func removeDelays(){
         runningImage.delay = 0
         foodImage.delay = 0
         runningButton.delay = 0

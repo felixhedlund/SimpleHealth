@@ -16,9 +16,9 @@ class InitialViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         
-        let vc =  UIStoryboard(name: "Contents", bundle: nil).instantiateViewControllerWithIdentifier("Hi")
+        let vc =  UIStoryboard(name: "Contents", bundle: nil).instantiateViewController(withIdentifier: "Hi")
         self.navigationController?.pushViewController(vc, animated: true)
         
     }
