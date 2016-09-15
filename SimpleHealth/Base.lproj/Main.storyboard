@@ -30,7 +30,7 @@
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
-                                                <color key="value" red="0.41386324730000001" green="0.71192141190000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="value" red="0.72941176470588232" green="0.88235294117647056" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="rotate">
                                                 <real key="value" value="45"/>
@@ -64,7 +64,7 @@
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dem-bd-zmw">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="374"/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.20067039695945946" colorSpace="calibratedWhite"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="calibratedRGB"/>
                                             </view>
                                         </subviews>
                                         <constraints>
@@ -76,7 +76,7 @@
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
-                                                <color key="value" red="0.41386324730000001" green="0.71192141190000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="value" red="0.72941176470000002" green="0.88235294119999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="rotate">
                                                 <real key="value" value="45"/>
@@ -110,7 +110,7 @@
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jqi-mJ-IyS">
                                                 <rect key="frame" x="0.0" y="0.0" width="562" height="561"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.20067039695945946" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.10000000000000001" colorSpace="calibratedRGB"/>
                                             </view>
                                         </subviews>
                                         <constraints>
@@ -122,7 +122,7 @@
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
-                                                <color key="value" red="0.41386324730000001" green="0.71192141190000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="value" red="0.72941176470000002" green="0.88235294119999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="rotate">
                                                 <real key="value" value="45"/>
@@ -184,6 +184,11 @@
                         </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outletCollection property="triangles" destination="P7Y-2E-LZh" collectionClass="NSMutableArray" id="aJ8-HU-Fp0"/>
+                        <outletCollection property="triangles" destination="NdA-lb-4TO" collectionClass="NSMutableArray" id="ULT-ey-h63"/>
+                        <outletCollection property="triangles" destination="kqU-g7-fse" collectionClass="NSMutableArray" id="nxc-2Y-iFV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

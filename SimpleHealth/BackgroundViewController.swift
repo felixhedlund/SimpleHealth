@@ -7,12 +7,18 @@
 //
 
 import UIKit
+import IBAnimatable
 
-class BackgroundViewController: UIViewController {
+protocol BackgroundViewColorChangeDelegate{
+    func animateWithColor(color: UIColor)
+}
+
+class BackgroundViewController: UIViewController, BackgroundViewColorChangeDelegate {
+    @IBOutlet var triangles: [AnimatableView]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        (UIApplication.sharedApplication().delegate as! AppDelegate).backgroundDelegate = self
         // Do any additional setup after loading the view.
     }
 
@@ -20,6 +26,16 @@ class BackgroundViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func animateWithColor(color: UIColor){
+        UIView.animateWithDuration(1.0, delay: 0.0, options:[UIViewAnimationOptions.CurveEaseIn], animations: {
+            for triangle in self.triangles{
+                triangle.fillColor = color
+            }
+            }, completion:nil)
+    }
+    
+    
     
 
     /*

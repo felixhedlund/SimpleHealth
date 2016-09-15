@@ -19,6 +19,9 @@
 		F7B8361A1D8744720090B951 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B836191D8744720090B951 /* InitialViewController.swift */; };
 		F7B8361C1D8753100090B951 /* Contents.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7B8361B1D8753100090B951 /* Contents.storyboard */; };
 		F7B836221D87539D0090B951 /* HelloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B836211D87539D0090B951 /* HelloViewController.swift */; };
+		F7B836271D8884080090B951 /* HexToColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B836261D8884080090B951 /* HexToColorExtension.swift */; };
+		F7B8362A1D8884630090B951 /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B836291D8884630090B951 /* ColorTheme.swift */; };
+		F7B8362C1D889B500090B951 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B8362B1D889B500090B951 /* MenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,9 @@
 		F7B836191D8744720090B951 /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		F7B8361B1D8753100090B951 /* Contents.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Contents.storyboard; sourceTree = "<group>"; };
 		F7B836211D87539D0090B951 /* HelloViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelloViewController.swift; sourceTree = "<group>"; };
+		F7B836261D8884080090B951 /* HexToColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexToColorExtension.swift; sourceTree = "<group>"; };
+		F7B836291D8884630090B951 /* ColorTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorTheme.swift; sourceTree = "<group>"; };
+		F7B8362B1D889B500090B951 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +176,8 @@
 		F7B8361E1D8753630090B951 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F7B836281D8884540090B951 /* Globals */,
+				F7B836231D8883DA0090B951 /* Extensions */,
 				F7B836201D87538B0090B951 /* Initial */,
 				F7B8361F1D8753770090B951 /* Contents */,
 			);
@@ -180,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				F7B836211D87539D0090B951 /* HelloViewController.swift */,
+				F7B8362B1D889B500090B951 /* MenuViewController.swift */,
 			);
 			name = Contents;
 			sourceTree = "<group>";
@@ -191,6 +200,22 @@
 				F7B836191D8744720090B951 /* InitialViewController.swift */,
 			);
 			name = Initial;
+			sourceTree = "<group>";
+		};
+		F7B836231D8883DA0090B951 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F7B836261D8884080090B951 /* HexToColorExtension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		F7B836281D8884540090B951 /* Globals */ = {
+			isa = PBXGroup;
+			children = (
+				F7B836291D8884630090B951 /* ColorTheme.swift */,
+			);
+			name = Globals;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -377,11 +402,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7B836271D8884080090B951 /* HexToColorExtension.swift in Sources */,
 				F7B836181D8743800090B951 /* BackgroundViewController.swift in Sources */,
+				F7B8362A1D8884630090B951 /* ColorTheme.swift in Sources */,
 				F7B836221D87539D0090B951 /* HelloViewController.swift in Sources */,
 				F7B835ED1D87341F0090B951 /* SimpleHealth.xcdatamodeld in Sources */,
 				F7B835E51D87341F0090B951 /* AppDelegate.swift in Sources */,
 				F7B8361A1D8744720090B951 /* InitialViewController.swift in Sources */,
+				F7B8362C1D889B500090B951 /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
