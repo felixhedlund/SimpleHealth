@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Background View Controller-->
@@ -21,16 +22,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BjY-cY-krw">
-                                <rect key="frame" x="0.0" y="0.0" width="188" height="188"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P7Y-2E-LZh" customClass="AnimatableView" customModule="IBAnimatable">
-                                        <rect key="frame" x="-172" y="-266" width="532" height="532"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P7Y-2E-LZh" customClass="AnimatableView" customModule="IBAnimatable">
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="P7Y-2E-LZh" secondAttribute="height" multiplier="1:1" id="stK-GB-OWI"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
-                                                <color key="value" red="0.72941176470588232" green="0.88235294117647056" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="value" red="0.72941176470588232" green="0.88235294117647056" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="rotate">
                                                 <real key="value" value="45"/>
@@ -38,7 +37,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="P7Y-2E-LZh" firstAttribute="centerX" secondItem="BjY-cY-krw" secondAttribute="centerX" id="8EH-zF-3Tc"/>
                                     <constraint firstItem="P7Y-2E-LZh" firstAttribute="centerY" secondItem="BjY-cY-krw" secondAttribute="centerY" id="lR9-jC-aZ3"/>
@@ -57,14 +56,11 @@
                                 </variation>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hz9-zF-70J">
-                                <rect key="frame" x="188" y="0.0" width="187" height="187"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NdA-lb-4TO" customClass="AnimatableView" customModule="IBAnimatable">
-                                        <rect key="frame" x="-170" y="-264" width="528" height="528"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NdA-lb-4TO" customClass="AnimatableView" customModule="IBAnimatable">
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dem-bd-zmw">
-                                                <rect key="frame" x="0.0" y="0.0" width="374" height="374"/>
-                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                             </view>
                                         </subviews>
                                         <constraints>
@@ -76,7 +72,7 @@
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
-                                                <color key="value" red="0.72941176470000002" green="0.88235294119999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="value" red="0.72941176470000002" green="0.88235294119999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="rotate">
                                                 <real key="value" value="45"/>
@@ -84,7 +80,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="NdA-lb-4TO" firstAttribute="centerY" secondItem="hz9-zF-70J" secondAttribute="centerY" id="Fc7-0d-Hie"/>
                                     <constraint firstItem="NdA-lb-4TO" firstAttribute="centerX" secondItem="hz9-zF-70J" secondAttribute="centerX" id="Qjf-AF-4Vg"/>
@@ -103,14 +99,11 @@
                                 </variation>
                             </view>
                             <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wy0-pB-JpX">
-                                <rect key="frame" x="94" y="0.0" width="187" height="187"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kqU-g7-fse" customClass="AnimatableView" customModule="IBAnimatable">
-                                        <rect key="frame" x="-303" y="-491" width="794" height="795"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kqU-g7-fse" customClass="AnimatableView" customModule="IBAnimatable">
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jqi-mJ-IyS">
-                                                <rect key="frame" x="0.0" y="0.0" width="562" height="561"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.10000000000000001" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                             </view>
                                         </subviews>
                                         <constraints>
@@ -122,7 +115,7 @@
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
-                                                <color key="value" red="0.72941176470000002" green="0.88235294119999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="value" red="0.72941176470000002" green="0.88235294119999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="rotate">
                                                 <real key="value" value="45"/>
@@ -130,7 +123,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="kqU-g7-fse" secondAttribute="bottom" id="3fy-Ep-fyi"/>
                                     <constraint firstAttribute="bottom" secondItem="kqU-g7-fse" secondAttribute="bottom" id="3uN-IJ-e1z"/>
@@ -142,21 +135,20 @@
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="NJx-ix-nHE"/>
-                                        <exclude reference="5fp-Ot-LGk"/>
                                         <exclude reference="3fy-Ep-fyi"/>
+                                        <exclude reference="5fp-Ot-LGk"/>
+                                        <exclude reference="NJx-ix-nHE"/>
                                     </mask>
                                 </variation>
                             </view>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y5Z-Ay-TpZ">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <segue destination="prd-Qz-e80" kind="embed" id="5XL-2a-RZ9"/>
                                 </connections>
                             </containerView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="BjY-cY-krw" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1:2" id="0uU-Hm-bKA"/>
                             <constraint firstItem="hz9-zF-70J" firstAttribute="width" secondItem="hz9-zF-70J" secondAttribute="height" multiplier="1:1" id="4oR-7q-MU9"/>
@@ -183,7 +175,6 @@
                             </mask>
                         </variation>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outletCollection property="triangles" destination="P7Y-2E-LZh" collectionClass="NSMutableArray" id="aJ8-HU-Fp0"/>
                         <outletCollection property="triangles" destination="NdA-lb-4TO" collectionClass="NSMutableArray" id="ULT-ey-h63"/>
@@ -203,10 +194,10 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="transitionAnimationType" value="Slide(Top)"/>
                         <userDefinedRuntimeAttribute type="number" keyPath="transitionDuration">
                             <real key="value" value="1"/>
                         </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="_transitionAnimationType" value="Slide(Top)"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <segue destination="6Dh-sR-Mx6" kind="relationship" relationship="rootViewController" id="AS6-fd-nPF"/>
@@ -214,16 +205,20 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cFe-Jf-vuc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="169.5" y="64.5"/>
+            <point key="canvasLocation" x="494" y="41"/>
         </scene>
         <!--Initial View Controller-->
         <scene sceneID="TkZ-tA-l7m">
             <objects>
                 <viewController id="6Dh-sR-Mx6" customClass="InitialViewController" customModule="SimpleHealth" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fP9-dN-KyC"/>
+                        <viewControllerLayoutGuide type="bottom" id="S4V-ie-JHe"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="QSa-VG-wE9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="X2K-hJ-5ET"/>
                 </viewController>
