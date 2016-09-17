@@ -14,15 +14,35 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-SimpleHealthTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-SimpleHealthUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0F380A39EBAE53C482D9ADA588E81792</key>
+		<key>32864F011B30EB197480823256893C75</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>8C9F7A4C0F727EC4EE8C1DB20A896F12</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8EC5586F4556AD94431A136FA32A95C6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E3999ABA4C3504CEA42EA5ACBD2BAA8C</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -23,13 +23,14 @@ class MenuViewController: UIViewController {
     @IBAction func didPressRunningButton(_ sender: AnyObject) {
         removeDelays()
         let rect = runningImage.frame
-        runningImage.y = -rect.minY + 24
-        runningImage.moveBy{
-            self.runningButton.fadeOutLeft()
-            self.foodButton.fadeOutLeft()
-            self.foodImage.fadeOutLeft()
-            self.titleLabel.fadeOutLeft()
-            if let delegate = (UIApplication.sharedApplication().delegate as! AppDelegate).backgroundDelegate{
+        
+        
+        runningImage.moveBy(x: 0, y: Double(-rect.minY) + 24){
+            self.runningButton.slideFade(.out, direction: .left, completion: nil)
+            self.foodButton.slideFade(.out, direction: .left, completion: nil)
+            self.foodImage.slideFade(.out, direction: .left, completion: nil)
+            self.titleLabel.slideFade(.out, direction: .left, completion: nil)
+            if let delegate = (UIApplication.shared.delegate as! AppDelegate).backgroundDelegate{
                 delegate.animateWithColor(ColorTheme.yellowColor)
             }
         }
@@ -38,13 +39,13 @@ class MenuViewController: UIViewController {
     @IBAction func didPressFoodButton(_ sender: AnyObject) {
         removeDelays()
         let rect = foodImage.frame
-        foodImage.y = -rect.minY + 24
-        foodImage.moveBy{
-            self.runningButton.fadeOutLeft()
-            self.foodButton.fadeOutLeft()
-            self.runningImage.fadeOutLeft()
-            self.titleLabel.fadeOutLeft()
-            if let delegate = (UIApplication.sharedApplication().delegate as! AppDelegate).backgroundDelegate{
+        
+        foodImage.moveBy(x: 0, y: Double(-rect.minY) + 24){
+            self.runningButton.slideFade(.out, direction: .left, completion: nil)
+            self.foodButton.slideFade(.out, direction: .left, completion: nil)
+            self.runningImage.slideFade(.out, direction: .left, completion: nil)
+            self.titleLabel.slideFade(.out, direction: .left, completion: nil)
+            if let delegate = (UIApplication.shared.delegate as! AppDelegate).backgroundDelegate{
                 delegate.animateWithColor(ColorTheme.greenColor)
             }
         }

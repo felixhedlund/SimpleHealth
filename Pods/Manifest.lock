@@ -2,8 +2,7 @@ PODS:
   - IBAnimatable (2.7)
 
 DEPENDENCIES:
-  - IBAnimatable (from `https://github.com/IBAnimatable/IBAnimatable.git`, branch
-    `swift3`)
+  - IBAnimatable (from `https://github.com/IBAnimatable/IBAnimatable.git`, branch `swift3`)
 
 EXTERNAL SOURCES:
   IBAnimatable:
@@ -18,4 +17,6 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   IBAnimatable: baa9b37d0326de969836e9215f73cc377a5a84a6
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 581b8d34c004edfb437d863abe08a92d43c604ba
+
+COCOAPODS: 1.0.1

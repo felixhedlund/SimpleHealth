@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'FA67D655F0B7AFB5EAE4AE24'
+               BlueprintIdentifier = '8C9F7A4C0F727EC4EE8C1DB20A896F12'
                BlueprintName = 'IBAnimatable'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'IBAnimatable.framework'>

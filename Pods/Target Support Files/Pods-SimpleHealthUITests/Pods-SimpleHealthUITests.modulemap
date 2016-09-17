@@ -1,0 +1,6 @@
+framework module Pods_SimpleHealthUITests {
+  umbrella header "Pods-SimpleHealthUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
