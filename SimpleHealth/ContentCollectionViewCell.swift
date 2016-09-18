@@ -1,5 +1,5 @@
 //
-//  ExerciseCollectionViewCell.swift
+//  ContentCollectionViewCell.swift
 //  SimpleHealth
 //
 //  Created by Felix Hedlund on 18/09/16.
@@ -8,14 +8,14 @@
 
 import UIKit
 import IBAnimatable
-class ExerciseCollectionViewCell: UICollectionViewCell {
+class ContentCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var triangleView: AnimatableView!
     @IBOutlet weak var circleView: AnimatableView!
     @IBOutlet weak var titleLabel: UILabel!
     
     
-    func setupCell(exercise: Exersice){
-        if let title = exercise.title{
+    func setupCell(name: String?){
+        if let title = name{
             titleLabel.text = title
         }else{
             titleLabel.text = ""

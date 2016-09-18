@@ -1,5 +1,5 @@
 //
-//  ExercisesViewController.swift
+//  FoodCategoriesViewController.swift
 //  SimpleHealth
 //
 //  Created by Felix Hedlund on 18/09/16.
@@ -7,30 +7,31 @@
 //
 
 import UIKit
-import CoreData
 import IBAnimatable
-protocol ExercisesReturnDelegate{
-    func didReturnFromExercises()
-}
+import CoreData
 
-class ExercisesViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UISearchBarDelegate, ExercisesAwaitingSyncDelegate {
+protocol FoodCategoriesReturnDelegate{
+    func didReturnFromFoodCategories(shouldShowFoods: Bool, foodCategoryId: Int16?)
+}
+class FoodCategoriesViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UISearchBarDelegate, FoodCategoriesAwaitingSyncDelegate {
+    @IBOutlet weak var exitButton: AnimatableButton!
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var collectionView: UICollectionView!
-    @IBOutlet weak var exitButton: AnimatableButton!
     
+    var returnDelegate: FoodCategoriesReturnDelegate!
+    var categories = [FoodCategory]()
     
-    var exercises = [Exersice]()
-    var returnDelegate: ExercisesReturnDelegate!
     override func viewDidLoad() {
         super.viewDidLoad()
         let dataCenter = (UIApplication.shared.delegate as! AppDelegate).dataCenter!
-        dataCenter.exercisesDelegate = self
+        dataCenter.foodCategoriesDelegate = self
         updateArrayWith(searchString: nil)
+        
         
         // Do any additional setup after loading the view.
     }
     
-    func exercisesWereSynced() {
+    func foodCategoriesWereSynced() {
         updateArrayWith(searchString: searchBar.text)
     }
     
@@ -38,24 +39,14 @@ class ExercisesViewController: UIViewController, UICollectionViewDelegate, UICol
         exitButton.fade(.in)
     }
     
-    @IBAction func didPressExit(_ sender: AnyObject) {
-        
-        self.dismiss(animated: true) { 
-            self.returnDelegate.didReturnFromExercises()
-        }
-    }
-    
-    
-    
-    
     fileprivate func updateArrayWith(searchString: String?){
-        let exerciseFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Exercise")
+        let categoryFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "FoodCategory")
         if let s = searchString{
-            exerciseFetch.predicate = NSPredicate(format: "title CONTAINS %@", s)
+            categoryFetch.predicate = NSPredicate(format: "name_sv CONTAINS %@", s)
         }
         do{
-            if let fetchedExercises = try dataStack.mainContext.fetch(exerciseFetch) as? [Exersice]{
-                self.exercises = fetchedExercises
+            if let fetchedCategories = try dataStack.mainContext.fetch(categoryFetch) as? [FoodCategory]{
+                self.categories = fetchedCategories
                 collectionView.reloadData()
             }
         } catch {
@@ -75,24 +66,40 @@ class ExercisesViewController: UIViewController, UICollectionViewDelegate, UICol
         }
         
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let categoryId = self.categories[indexPath.row].oid
+        self.dismiss(animated: true) { 
+            self.returnDelegate.didReturnFromFoodCategories(shouldShowFoods: true, foodCategoryId: categoryId)
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return categories.count
+    }
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Content", for: indexPath) as! ContentCollectionViewCell
+        cell.setupCell(name: self.categories[indexPath.row].name_sv)
+        return cell
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return exercises.count
+    @IBAction func didPressExit(_ sender: AnyObject) {
+        self.dismiss(animated: true) {
+            self.returnDelegate.didReturnFromFoodCategories(shouldShowFoods: false, foodCategoryId: nil)
+        }
     }
     
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Content", for: indexPath) as! ContentCollectionViewCell
-        cell.setupCell(name: self.exercises[indexPath.row].title)
-        return cell
+    @IBAction func didPressViewAllFood(_ sender: AnyObject) {
+        self.dismiss(animated: true) { 
+            self.returnDelegate.didReturnFromFoodCategories(shouldShowFoods: true, foodCategoryId: nil)
+        }
     }
 
     /*

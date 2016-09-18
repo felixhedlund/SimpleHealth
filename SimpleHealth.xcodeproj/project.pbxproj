@@ -15,7 +15,9 @@
 		F7ADC9501D8F0A9200097F8C /* exercisesStatic.json in Resources */ = {isa = PBXBuildFile; fileRef = F7ADC94D1D8F0A9200097F8C /* exercisesStatic.json */; };
 		F7ADC9511D8F0A9200097F8C /* foodStatic.json in Resources */ = {isa = PBXBuildFile; fileRef = F7ADC94E1D8F0A9200097F8C /* foodStatic.json */; };
 		F7ADC9531D8F13C500097F8C /* ExercisesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ADC9521D8F13C500097F8C /* ExercisesViewController.swift */; };
-		F7ADC9551D8F16CA00097F8C /* ExerciseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ADC9541D8F16CA00097F8C /* ExerciseCollectionViewCell.swift */; };
+		F7ADC9591D8F300400097F8C /* FoodCategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ADC9581D8F300400097F8C /* FoodCategoriesViewController.swift */; };
+		F7ADC95B1D8F31E500097F8C /* ContentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ADC95A1D8F31E500097F8C /* ContentCollectionViewCell.swift */; };
+		F7ADC95E1D8F3B2300097F8C /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ADC95D1D8F3B2300097F8C /* FoodViewController.swift */; };
 		F7B835E51D87341F0090B951 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B835E41D87341F0090B951 /* AppDelegate.swift */; };
 		F7B835EA1D87341F0090B951 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7B835E81D87341F0090B951 /* Main.storyboard */; };
 		F7B835ED1D87341F0090B951 /* SimpleHealth.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F7B835EB1D87341F0090B951 /* SimpleHealth.xcdatamodeld */; };
@@ -64,7 +66,9 @@
 		F7ADC94D1D8F0A9200097F8C /* exercisesStatic.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = exercisesStatic.json; sourceTree = "<group>"; };
 		F7ADC94E1D8F0A9200097F8C /* foodStatic.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = foodStatic.json; sourceTree = "<group>"; };
 		F7ADC9521D8F13C500097F8C /* ExercisesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExercisesViewController.swift; sourceTree = "<group>"; };
-		F7ADC9541D8F16CA00097F8C /* ExerciseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseCollectionViewCell.swift; sourceTree = "<group>"; };
+		F7ADC9581D8F300400097F8C /* FoodCategoriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodCategoriesViewController.swift; sourceTree = "<group>"; };
+		F7ADC95A1D8F31E500097F8C /* ContentCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentCollectionViewCell.swift; sourceTree = "<group>"; };
+		F7ADC95D1D8F3B2300097F8C /* FoodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
 		F7B835E11D87341E0090B951 /* SimpleHealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleHealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7B835E41D87341F0090B951 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7B835E91D87341F0090B951 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -161,9 +165,24 @@
 			isa = PBXGroup;
 			children = (
 				F7ADC9521D8F13C500097F8C /* ExercisesViewController.swift */,
-				F7ADC9541D8F16CA00097F8C /* ExerciseCollectionViewCell.swift */,
 			);
 			name = Exercises;
+			sourceTree = "<group>";
+		};
+		F7ADC9571D8F2FE900097F8C /* FoodCategories */ = {
+			isa = PBXGroup;
+			children = (
+				F7ADC9581D8F300400097F8C /* FoodCategoriesViewController.swift */,
+			);
+			name = FoodCategories;
+			sourceTree = "<group>";
+		};
+		F7ADC95C1D8F3B1500097F8C /* Food */ = {
+			isa = PBXGroup;
+			children = (
+				F7ADC95D1D8F3B2300097F8C /* FoodViewController.swift */,
+			);
+			name = Food;
 			sourceTree = "<group>";
 		};
 		F7B835D81D87341D0090B951 = {
@@ -246,7 +265,10 @@
 			children = (
 				F7B836211D87539D0090B951 /* HelloViewController.swift */,
 				F7B8362B1D889B500090B951 /* MenuViewController.swift */,
+				F7ADC95C1D8F3B1500097F8C /* Food */,
+				F7ADC9571D8F2FE900097F8C /* FoodCategories */,
 				F7ADC9561D8F172100097F8C /* Exercises */,
+				F7ADC95A1D8F31E500097F8C /* ContentCollectionViewCell.swift */,
 			);
 			name = Contents;
 			sourceTree = "<group>";
@@ -550,12 +572,14 @@
 				F7B836271D8884080090B951 /* HexToColorExtension.swift in Sources */,
 				F7B836181D8743800090B951 /* BackgroundViewController.swift in Sources */,
 				F7B8362A1D8884630090B951 /* ColorTheme.swift in Sources */,
+				F7ADC95B1D8F31E500097F8C /* ContentCollectionViewCell.swift in Sources */,
 				F7ADC9531D8F13C500097F8C /* ExercisesViewController.swift in Sources */,
 				F7B836221D87539D0090B951 /* HelloViewController.swift in Sources */,
-				F7ADC9551D8F16CA00097F8C /* ExerciseCollectionViewCell.swift in Sources */,
 				F7B835ED1D87341F0090B951 /* SimpleHealth.xcdatamodeld in Sources */,
 				F7B835E51D87341F0090B951 /* AppDelegate.swift in Sources */,
+				F7ADC95E1D8F3B2300097F8C /* FoodViewController.swift in Sources */,
 				F7B8361A1D8744720090B951 /* InitialViewController.swift in Sources */,
+				F7ADC9591D8F300400097F8C /* FoodCategoriesViewController.swift in Sources */,
 				F7B8362C1D889B500090B951 /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -48,7 +48,8 @@
         <attribute name="language" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="lastupdated" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="mlingram" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="oid" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES">
+        <attribute name="ocategoryid" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="oid" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES">
             <userInfo>
                 <entry key="hyper.isPrimaryKey" value="true"/>
             </userInfo>
@@ -101,7 +102,7 @@
     </entity>
     <elements>
         <element name="Exercise" positionX="-63" positionY="-18" width="128" height="360"/>
-        <element name="Food" positionX="-18" positionY="162" width="128" height="540"/>
+        <element name="Food" positionX="-18" positionY="162" width="128" height="555"/>
         <element name="FoodCategory" positionX="-54" positionY="144" width="128" height="330"/>
     </elements>
 </model>
