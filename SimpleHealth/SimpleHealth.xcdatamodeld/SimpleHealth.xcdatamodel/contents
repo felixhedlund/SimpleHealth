@@ -73,7 +73,6 @@
                 <entry key="hyper.remoteKey" value="deleted"/>
             </userInfo>
         </attribute>
-        <relationship name="foodCategory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FoodCategory" inverseName="foods" inverseEntity="FoodCategory" syncable="YES"/>
     </entity>
     <entity name="FoodCategory" representedClassName="FoodCategory" syncable="YES" codeGenerationType="class">
         <attribute name="category" optional="YES" attributeType="String" syncable="YES"/>
@@ -98,11 +97,10 @@
         </attribute>
         <attribute name="photo_version" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="servingscategory" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <relationship name="foods" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Food" inverseName="foodCategory" inverseEntity="Food" syncable="YES"/>
     </entity>
     <elements>
         <element name="Exercise" positionX="-63" positionY="-18" width="128" height="360"/>
-        <element name="Food" positionX="-18" positionY="162" width="128" height="555"/>
-        <element name="FoodCategory" positionX="-54" positionY="144" width="128" height="330"/>
+        <element name="Food" positionX="-18" positionY="162" width="128" height="540"/>
+        <element name="FoodCategory" positionX="-54" positionY="144" width="128" height="315"/>
     </elements>
 </model>

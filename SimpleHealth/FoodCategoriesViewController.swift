@@ -11,7 +11,7 @@ import IBAnimatable
 import CoreData
 
 protocol FoodCategoriesReturnDelegate{
-    func didReturnFromFoodCategories(shouldShowFoods: Bool, foodCategoryId: Int16?)
+    func didReturnFromFoodCategories(shouldShowFoods: Bool, foodCategoryId: Int16?, foodTitle: String?)
 }
 class FoodCategoriesViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UISearchBarDelegate, FoodCategoriesAwaitingSyncDelegate {
     @IBOutlet weak var exitButton: AnimatableButton!
@@ -69,8 +69,9 @@ class FoodCategoriesViewController: UIViewController, UICollectionViewDelegate, 
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let categoryId = self.categories[indexPath.row].oid
+        let foodTitle = self.categories[indexPath.row].name_sv
         self.dismiss(animated: true) { 
-            self.returnDelegate.didReturnFromFoodCategories(shouldShowFoods: true, foodCategoryId: categoryId)
+            self.returnDelegate.didReturnFromFoodCategories(shouldShowFoods: true, foodCategoryId: categoryId, foodTitle: foodTitle)
         }
     }
     
@@ -92,13 +93,13 @@ class FoodCategoriesViewController: UIViewController, UICollectionViewDelegate, 
     }
     @IBAction func didPressExit(_ sender: AnyObject) {
         self.dismiss(animated: true) {
-            self.returnDelegate.didReturnFromFoodCategories(shouldShowFoods: false, foodCategoryId: nil)
+            self.returnDelegate.didReturnFromFoodCategories(shouldShowFoods: false, foodCategoryId: nil, foodTitle: nil)
         }
     }
     
     @IBAction func didPressViewAllFood(_ sender: AnyObject) {
         self.dismiss(animated: true) { 
-            self.returnDelegate.didReturnFromFoodCategories(shouldShowFoods: true, foodCategoryId: nil)
+            self.returnDelegate.didReturnFromFoodCategories(shouldShowFoods: true, foodCategoryId: nil, foodTitle: nil)
         }
     }
 

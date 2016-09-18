@@ -18,10 +18,12 @@ class FoodViewController: UIViewController, UICollectionViewDelegate, UICollecti
     @IBOutlet weak var exitButton: AnimatableButton!
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var titleLabel: UILabel!
     
     var returnDelegate: FoodsReturnDelegate!
     var foods = [Food]()
     var categoryId: Int16?
+    var titleForLabel: String?
     override func viewDidLoad() {
         super.viewDidLoad()
         let dataCenter = (UIApplication.shared.delegate as! AppDelegate).dataCenter!
@@ -31,6 +33,9 @@ class FoodViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        if let title = titleForLabel{
+            self.titleLabel.text = "View all \(title)"
+        }
         updateArrayWith(searchString: searchBar.text, categoryId: categoryId)
     }
     

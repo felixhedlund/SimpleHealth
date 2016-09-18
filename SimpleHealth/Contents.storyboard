@@ -514,9 +514,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View all dishes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z95-2e-RYg">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uzc-u7-zsX">
                                 <subviews>
-                                    <searchBar contentMode="redraw" placeholder="Search Food Categories..." translatesAutoresizingMaskIntoConstraints="NO" id="XAw-ge-kR4">
+                                    <searchBar contentMode="redraw" placeholder="Search Food..." translatesAutoresizingMaskIntoConstraints="NO" id="XAw-ge-kR4">
                                         <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
@@ -627,7 +632,9 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Yn0-hJ-p9n" firstAttribute="top" secondItem="Uzc-u7-zsX" secondAttribute="bottom" id="880-8I-kzt"/>
+                            <constraint firstItem="z95-2e-RYg" firstAttribute="bottom" secondItem="Uzc-u7-zsX" secondAttribute="top" constant="-8" id="Cvd-KQ-GfK"/>
                             <constraint firstItem="4Zp-M5-5Jw" firstAttribute="top" secondItem="xN1-Cu-xQC" secondAttribute="bottom" constant="8" id="Z8t-Nq-3vl"/>
+                            <constraint firstItem="z95-2e-RYg" firstAttribute="centerX" secondItem="guL-Ts-NBs" secondAttribute="centerX" id="dNU-jd-hV9"/>
                             <constraint firstItem="Uzc-u7-zsX" firstAttribute="height" secondItem="guL-Ts-NBs" secondAttribute="height" multiplier="1:2" id="djd-Pr-fTG"/>
                             <constraint firstItem="Uzc-u7-zsX" firstAttribute="centerX" secondItem="guL-Ts-NBs" secondAttribute="centerX" id="egh-Yl-bwm"/>
                             <constraint firstItem="4Zp-M5-5Jw" firstAttribute="leading" secondItem="guL-Ts-NBs" secondAttribute="leadingMargin" constant="-16" id="lX2-k8-dAR"/>
@@ -638,6 +645,7 @@
                         <outlet property="collectionView" destination="XZr-Ru-YMp" id="U7I-Se-hMT"/>
                         <outlet property="exitButton" destination="4Zp-M5-5Jw" id="jbq-g0-fxs"/>
                         <outlet property="searchBar" destination="XAw-ge-kR4" id="SVB-Jh-Z1l"/>
+                        <outlet property="titleLabel" destination="z95-2e-RYg" id="LJX-u5-vJc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Ea-4C-uAR" userLabel="First Responder" sceneMemberID="firstResponder"/>

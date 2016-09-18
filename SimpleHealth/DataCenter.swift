@@ -45,15 +45,26 @@ class DataCenter: NSObject{
     fileprivate func readFromFiles(){
         
         DispatchQueue.global(qos: .background).async {
+            let defaults = UserDefaults.standard
             for index in 0...2{
                 var pathName = ""
+                
                 switch index{
                 case 0:
                     pathName = self.jsonFileNames.exersizes
+                    if defaults.bool(forKey: "syncExercises"){
+                        continue
+                    }
                 case 1:
                     pathName = self.jsonFileNames.foodCategories
+                    if defaults.bool(forKey: "syncFoodCategories"){
+                        continue
+                    }
                 case 2:
                     pathName = self.jsonFileNames.food
+                    if defaults.bool(forKey: "syncFood"){
+                        continue
+                    }
                 default:
                     pathName = ""
                 }
@@ -64,13 +75,16 @@ class DataCenter: NSObject{
                         let jsonData = try NSData(contentsOfFile: path, options: NSData.ReadingOptions.mappedIfSafe)
                         if let jsonResult: NSArray = try JSONSerialization.jsonObject(with: jsonData as Data, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSArray
                         {
-                            print(jsonResult)
+                            
                             switch index{
                             case 0:
+                                print("Sync Exersices")
                                 self.syncExercises(array: jsonResult)
                             case 1:
+                                print("Sync FoodCategories")
                                 self.syncFoodCategories(array: jsonResult)
                             case 2:
+                                print("Sync Food")
                                 self.syncFood(array: jsonResult)
                             default:
                                 print()
@@ -88,32 +102,38 @@ class DataCenter: NSObject{
     }
     
     fileprivate func syncFood(array: NSArray){
-        DispatchQueue.main.sync {
+        DispatchQueue.global(qos: .background).async {
             Sync.changes(array as! [[String : Any]], inEntityNamed: "Food", dataStack: dataStack) { (error) in
                 if let error = error{
                     print(error)
                 }else{
-                    if let delegate = self.foodDelegate{
-                        delegate.foodWereSynced()
-                        let defaults = UserDefaults.standard
-                        defaults.set(true, forKey: "syncFood")
+                    DispatchQueue.main.async {
+                        if let delegate = self.foodDelegate{
+                            delegate.foodWereSynced()
+                            let defaults = UserDefaults.standard
+                            defaults.set(true, forKey: "syncFood")
+                        }
                     }
                 }
             }
         }
         
+        
     }
     
     fileprivate func syncExercises(array: NSArray){
-        DispatchQueue.main.sync {
+        
+        DispatchQueue.global(qos: .background).async {
             Sync.changes(array as! [[String : Any]], inEntityNamed: "Exercise", dataStack: dataStack) { (error) in
                 if let error = error{
                     print(error)
                 }else{
-                    if let delegate = self.exercisesDelegate{
-                        delegate.exercisesWereSynced()
-                        let defaults = UserDefaults.standard
-                        defaults.set(true, forKey: "syncExercises")
+                    DispatchQueue.main.async {
+                        if let delegate = self.exercisesDelegate{
+                            delegate.exercisesWereSynced()
+                            let defaults = UserDefaults.standard
+                            defaults.set(true, forKey: "syncExercises")
+                        }
                     }
                 }
             }
@@ -121,18 +141,23 @@ class DataCenter: NSObject{
         
     }
     fileprivate func syncFoodCategories(array: NSArray){
-        DispatchQueue.main.sync {
+        
+        DispatchQueue.global(qos: .background).async {
             Sync.changes(array as! [[String : Any]], inEntityNamed: "FoodCategory", dataStack: dataStack) { (error) in
                 if let error = error{
                     print(error)
                 }else{
-                    if let delegate = self.foodCategoriesDelegate{
-                        delegate.foodCategoriesWereSynced()
-                        let defaults = UserDefaults.standard
-                        defaults.set(true, forKey: "syncFoodCategories")
+                    DispatchQueue.main.async {
+                        if let delegate = self.foodCategoriesDelegate{
+                            delegate.foodCategoriesWereSynced()
+                            let defaults = UserDefaults.standard
+                            defaults.set(true, forKey: "syncFoodCategories")
+                        }
                     }
                 }
-            }
+        }
+        
+        
         }
         
     }

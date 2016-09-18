@@ -60,12 +60,15 @@ class MenuViewController: UIViewController, ExercisesReturnDelegate, FoodCategor
         }
     }
     
-    func didReturnFromFoodCategories(shouldShowFoods: Bool, foodCategoryId: Int16?) {
+    func didReturnFromFoodCategories(shouldShowFoods: Bool, foodCategoryId: Int16?, foodTitle: String?) {
         if shouldShowFoods{
             let vc =  UIStoryboard(name: "Contents", bundle: nil).instantiateViewController(withIdentifier: "Food") as! FoodViewController
             vc.returnDelegate = self
             if let id = foodCategoryId{
                 vc.categoryId = id
+            }
+            if let title = foodTitle{
+                vc.titleForLabel = title
             }
             
             self.present(vc, animated: true, completion: {
