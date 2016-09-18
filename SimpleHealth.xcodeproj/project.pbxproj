@@ -10,6 +10,10 @@
 		708280E56091890D9ED6C29F /* Pods_SimpleHealthUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CC2B0467DD6F63AB5451191 /* Pods_SimpleHealthUITests.framework */; };
 		AF3C93C17EF35A947496AE2A /* Pods_SimpleHealthTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A0B95D71D4AA19037473649 /* Pods_SimpleHealthTests.framework */; };
 		DB56B51BD479E946DB632CC4 /* Pods_SimpleHealth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84103F55CA5E86B3C740884C /* Pods_SimpleHealth.framework */; };
+		F7ADC9441D8F06B400097F8C /* DataCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ADC9431D8F06B400097F8C /* DataCenter.swift */; };
+		F7ADC94F1D8F0A9200097F8C /* categoriesStatic.json in Resources */ = {isa = PBXBuildFile; fileRef = F7ADC94C1D8F0A9200097F8C /* categoriesStatic.json */; };
+		F7ADC9501D8F0A9200097F8C /* exercisesStatic.json in Resources */ = {isa = PBXBuildFile; fileRef = F7ADC94D1D8F0A9200097F8C /* exercisesStatic.json */; };
+		F7ADC9511D8F0A9200097F8C /* foodStatic.json in Resources */ = {isa = PBXBuildFile; fileRef = F7ADC94E1D8F0A9200097F8C /* foodStatic.json */; };
 		F7B835E51D87341F0090B951 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B835E41D87341F0090B951 /* AppDelegate.swift */; };
 		F7B835EA1D87341F0090B951 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7B835E81D87341F0090B951 /* Main.storyboard */; };
 		F7B835ED1D87341F0090B951 /* SimpleHealth.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F7B835EB1D87341F0090B951 /* SimpleHealth.xcdatamodeld */; };
@@ -53,6 +57,10 @@
 		7A0B95D71D4AA19037473649 /* Pods_SimpleHealthTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleHealthTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84103F55CA5E86B3C740884C /* Pods_SimpleHealth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleHealth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7A8AB010FA20B706C6BA84F /* Pods-SimpleHealth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleHealth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleHealth/Pods-SimpleHealth.debug.xcconfig"; sourceTree = "<group>"; };
+		F7ADC9431D8F06B400097F8C /* DataCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataCenter.swift; sourceTree = "<group>"; };
+		F7ADC94C1D8F0A9200097F8C /* categoriesStatic.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = categoriesStatic.json; sourceTree = "<group>"; };
+		F7ADC94D1D8F0A9200097F8C /* exercisesStatic.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = exercisesStatic.json; sourceTree = "<group>"; };
+		F7ADC94E1D8F0A9200097F8C /* foodStatic.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = foodStatic.json; sourceTree = "<group>"; };
 		F7B835E11D87341E0090B951 /* SimpleHealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleHealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7B835E41D87341F0090B951 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7B835E91D87341F0090B951 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -126,6 +134,25 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F7ADC9421D8F06A700097F8C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F7ADC9431D8F06B400097F8C /* DataCenter.swift */,
+				F7ADC9451D8F083500097F8C /* JSON */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		F7ADC9451D8F083500097F8C /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				F7ADC94C1D8F0A9200097F8C /* categoriesStatic.json */,
+				F7ADC94D1D8F0A9200097F8C /* exercisesStatic.json */,
+				F7ADC94E1D8F0A9200097F8C /* foodStatic.json */,
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
 		F7B835D81D87341D0090B951 = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +219,7 @@
 		F7B8361E1D8753630090B951 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F7ADC9421D8F06A700097F8C /* Data */,
 				F7B836281D8884540090B951 /* Globals */,
 				F7B836231D8883DA0090B951 /* Extensions */,
 				F7B836201D87538B0090B951 /* Initial */,
@@ -354,6 +382,9 @@
 				F7B835F21D87341F0090B951 /* LaunchScreen.storyboard in Resources */,
 				F7B835EF1D87341F0090B951 /* Assets.xcassets in Resources */,
 				F7B835EA1D87341F0090B951 /* Main.storyboard in Resources */,
+				F7ADC94F1D8F0A9200097F8C /* categoriesStatic.json in Resources */,
+				F7ADC9501D8F0A9200097F8C /* exercisesStatic.json in Resources */,
+				F7ADC9511D8F0A9200097F8C /* foodStatic.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,6 +532,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7ADC9441D8F06B400097F8C /* DataCenter.swift in Sources */,
 				F7B836271D8884080090B951 /* HexToColorExtension.swift in Sources */,
 				F7B836181D8743800090B951 /* BackgroundViewController.swift in Sources */,
 				F7B8362A1D8884630090B951 /* ColorTheme.swift in Sources */,
