@@ -1,22 +1,59 @@
 PODS:
+  - DATAFilter (1.0.0):
+    - DATAObjectIDs (~> 0.6.0)
+  - DATAObjectIDs (0.6.0)
+  - DATAStack (6.0.0)
+  - DateParser (0.1.0)
   - IBAnimatable (2.7)
+  - NSDictionary-ANDYSafeValue (0.3.1)
+  - NSEntityDescription-SYNCPrimaryKey (1.2.4):
+    - NSString-HYPNetworking (~> 1.0.3)
+  - NSManagedObject-HYPPropertyMapper (4.0.1):
+    - DateParser (~> 0.1.0)
+    - NSEntityDescription-SYNCPrimaryKey (~> 1.2.4)
+    - NSString-HYPNetworking (~> 1.0.3)
+  - NSString-HYPNetworking (1.0.3)
+  - Sync (2.0.0):
+    - DATAFilter (~> 1.0.0)
+    - DATAStack (~> 6.0.0)
+    - NSDictionary-ANDYSafeValue (~> 0.3.1)
+    - NSEntityDescription-SYNCPrimaryKey (~> 1.2.4)
+    - NSManagedObject-HYPPropertyMapper (~> 4.0.1)
+    - TestCheck (~> 1.0.0)
+  - TestCheck (1.0.0)
 
 DEPENDENCIES:
   - IBAnimatable (from `https://github.com/IBAnimatable/IBAnimatable.git`, branch `swift3`)
+  - Sync (from `https://github.com/hyperoslo/Sync.git`)
 
 EXTERNAL SOURCES:
   IBAnimatable:
     :branch: swift3
     :git: https://github.com/IBAnimatable/IBAnimatable.git
+  Sync:
+    :git: https://github.com/hyperoslo/Sync.git
 
 CHECKOUT OPTIONS:
   IBAnimatable:
     :commit: 7eba3c18b915e6a07dfa33a3405e7dba245c2997
     :git: https://github.com/IBAnimatable/IBAnimatable.git
+  Sync:
+    :commit: 970117e2479eeb52ac11812260ddf4704d8224bc
+    :git: https://github.com/hyperoslo/Sync.git
 
 SPEC CHECKSUMS:
+  DATAFilter: 6f6b7de6a004bbb172b78880f72fdc7f618fc4da
+  DATAObjectIDs: e3d50315134d21009f3b34983bcf44e74d8ab54a
+  DATAStack: 4cdf8e1b50f6d80c7d70f75e7a2c29545a008860
+  DateParser: 6609ccde5a21650e2f61cea718a2e5c6c34ce4e8
   IBAnimatable: baa9b37d0326de969836e9215f73cc377a5a84a6
+  NSDictionary-ANDYSafeValue: 2d7adf339b6e302d71fec5f1d71ae00aacda993e
+  NSEntityDescription-SYNCPrimaryKey: 8f3024bddb098157b08710dc29a011e9948c5ed8
+  NSManagedObject-HYPPropertyMapper: 2b42481a261b467024f6b6096fbe0a307a5198e3
+  NSString-HYPNetworking: d4cc1047b85a02bdadd90c51b5d497e07d812efc
+  Sync: 2a429ed8134bdafa7258311dc6ef50df269bb4de
+  TestCheck: af3ff0c7c7c22cc4fbcc49a7e10d4187f0cbf1b9
 
-PODFILE CHECKSUM: 581b8d34c004edfb437d863abe08a92d43c604ba
+PODFILE CHECKSUM: de348235714b95b31f315a5fa4c1462144274762
 
 COCOAPODS: 1.0.1

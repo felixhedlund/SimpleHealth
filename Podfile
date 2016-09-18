@@ -5,6 +5,7 @@ use_frameworks!
 
 target 'SimpleHealth' do
     pod 'IBAnimatable', :git => 'https://github.com/IBAnimatable/IBAnimatable.git', :branch => 'swift3'
+    pod 'Sync', :git => 'https://github.com/hyperoslo/Sync.git'
 end
 
 target 'SimpleHealthTests' do
