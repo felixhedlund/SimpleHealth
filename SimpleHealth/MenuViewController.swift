@@ -46,6 +46,10 @@ class MenuViewController: UIViewController, ExercisesReturnDelegate {
     
     func didReturnFromExercises(){
         
+        if let delegate = (UIApplication.shared.delegate as! AppDelegate).backgroundDelegate{
+            delegate.animateWithColor(ColorTheme.blueColor)
+        }
+        
         self.runningImage.slideFade(.out, direction: .up, completion: nil)
 
         self.runningButton.slideFade(.in, direction: .right)
