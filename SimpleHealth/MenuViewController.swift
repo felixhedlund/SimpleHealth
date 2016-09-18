@@ -8,34 +8,56 @@
 
 import UIKit
 import IBAnimatable
-class MenuViewController: UIViewController {
+class MenuViewController: UIViewController, ExercisesReturnDelegate {
     @IBOutlet weak var runningImage: AnimatableImageView!
     @IBOutlet weak var foodImage: AnimatableImageView!
     @IBOutlet weak var runningButton: AnimatableButton!
     @IBOutlet weak var foodButton: AnimatableButton!
     @IBOutlet weak var titleLabel: AnimatableLabel!
 
+    @IBOutlet weak var runningButtonContainer: UIView!
+    @IBOutlet weak var foodButtonContainer: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+    
+    
     @IBAction func didPressRunningButton(_ sender: AnyObject) {
         removeDelays()
         let rect = runningImage.frame
-        
-        
         runningImage.moveBy(x: 0, y: Double(-rect.minY) + 24){
             self.runningButton.slideFade(.out, direction: .left, completion: nil)
             self.foodButton.slideFade(.out, direction: .left, completion: nil)
             self.foodImage.slideFade(.out, direction: .left, completion: nil)
-            self.titleLabel.slideFade(.out, direction: .left, completion: nil)
+            self.titleLabel.slideFade(.out, direction: .left, completion: {
+                let vc =  UIStoryboard(name: "Contents", bundle: nil).instantiateViewController(withIdentifier: "Exersices") as! ExercisesViewController
+                vc.returnDelegate = self
+                self.present(vc, animated: true, completion: {
+                })
+            })
             if let delegate = (UIApplication.shared.delegate as! AppDelegate).backgroundDelegate{
                 delegate.animateWithColor(ColorTheme.yellowColor)
             }
         }
         
     }
+    
+    func didReturnFromExercises(){
+        
+        self.runningImage.slideFade(.out, direction: .up, completion: nil)
+
+        self.runningButton.slideFade(.in, direction: .right)
+        self.foodButton.slideFade(.in, direction: .right)
+        self.foodImage.slideFade(.in, direction: .right)
+        self.titleLabel.slideFade(.in, direction: .right) {
+            self.runningImage.slide(.in, direction: .down)
+        }
+    }
+    
+    
+    
     @IBAction func didPressFoodButton(_ sender: AnyObject) {
         removeDelays()
         let rect = foodImage.frame
@@ -44,12 +66,19 @@ class MenuViewController: UIViewController {
             self.runningButton.slideFade(.out, direction: .left, completion: nil)
             self.foodButton.slideFade(.out, direction: .left, completion: nil)
             self.runningImage.slideFade(.out, direction: .left, completion: nil)
-            self.titleLabel.slideFade(.out, direction: .left, completion: nil)
+            self.titleLabel.slideFade(.out, direction: .left, completion: { 
+//                let vc =  UIStoryboard(name: "Contents", bundle: nil).instantiateViewController(withIdentifier: "Exersices") as! ExercisesViewController
+//                self.present(vc, animated: true, completion: {
+                    
+//                })
+            })
             if let delegate = (UIApplication.shared.delegate as! AppDelegate).backgroundDelegate{
                 delegate.animateWithColor(ColorTheme.greenColor)
             }
         }
     }
+    
+    
     
     fileprivate func removeDelays(){
         runningImage.delay = 0

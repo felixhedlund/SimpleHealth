@@ -10,8 +10,10 @@ import Foundation
 import Sync
 import DATAStack
 
+
+let dataStack = DATAStack(modelName: "SimpleHealth")
 class DataCenter: NSObject{
-    let dataStack = DATAStack(modelName: "SimpleHealth")
+    
     
     let jsonFileNames = (exersizes: "exercisesStatic", foodCategories: "categoriesStatic", food: "foodStatic")
     
