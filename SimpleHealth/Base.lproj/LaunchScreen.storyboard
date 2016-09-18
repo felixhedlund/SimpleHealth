@@ -21,7 +21,7 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Launch" translatesAutoresizingMaskIntoConstraints="NO" id="8yN-7n-5TL">
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="8yN-7n-5TL" secondAttribute="height" multiplier="750:580" id="hsy-fe-07n"/>
+                                    <constraint firstAttribute="width" secondItem="8yN-7n-5TL" secondAttribute="height" multiplier="750:629" id="hsy-fe-07n"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -39,6 +39,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Launch" width="750" height="580"/>
+        <image name="Launch" width="750" height="629"/>
     </resources>
 </document>
